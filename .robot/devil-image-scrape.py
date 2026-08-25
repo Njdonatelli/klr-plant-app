@@ -118,38 +118,59 @@ def main() -> None:
     done = 0
     t0 = time.monotonic()
 
-    def _worker(row: int, url: str) -> tuple[int, Optional[str], Optional[str]]:
+    def _worker(row: int, url: str) -> tuple[int, str, Optional[str], Optional[str]]:
         session = requests.Session()
         img, key = resolve(url, session, args.size)
         time.sleep(args.delay)
-        return row, img, key
+        return row, url, img, key
 
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {pool.submit(_worker, r, u): r for r, u in work}
         for future in as_completed(futures):
-            row, img, key = future.result()
+            row, url, img, key = future.result()
+
+            # Extract a short slug from the URL for display
+            slug = url.rstrip("/").rsplit("/", 1)[-1][:50]
+
             with wb_lock:
                 if img:
                     ws.cell(row=row, column=61, value=img)
                     ws.cell(row=row, column=63, value="DMN")
                     ws.cell(row=row, column=64, value=key)
+                    status = "OK"
                 else:
                     ws.cell(row=row, column=61, value="no image")
                     gbif = ws.cell(row=row, column=62).value
                     ws.cell(row=row, column=63, value="GBIF" if gbif else "none")
+                    status = "SKIP"
+                    reason = "no og:image on page"
 
                 done += 1
+                elapsed = time.monotonic() - t0
+                rate = done / elapsed if elapsed > 0 else 0
+                eta = (total - done) / rate if rate > 0 else 0
+                pct = done * 100 // total
+
+                # Per-row status
+                if status == "OK":
+                    print(f"  [{status}] row {row:<5}  {slug}", flush=True)
+                else:
+                    print(f"  [{status}] row {row:<5}  {slug}  ({reason})", flush=True)
+
+                # Progress bar every row
+                bar_len = 30
+                filled = bar_len * done // total
+                bar = "#" * filled + "-" * (bar_len - filled)
+                print(f"  {bar} {pct:>3}%  ({done}/{total})  "
+                      f"{rate:.1f}/s  ~{eta:.0f}s left", flush=True)
+
                 if done % 25 == 0:
                     wb.save(args.out)  # checkpoint
-                    elapsed = time.monotonic() - t0
-                    rate = done / elapsed
-                    eta = (total - done) / rate if rate > 0 else 0
-                    print(f"{done}/{total} resolved  ({rate:.1f}/s, ~{eta:.0f}s remaining)",
-                          flush=True)
+                    print(f"  [saved] checkpoint", flush=True)
 
     wb.save(args.out)
     elapsed = time.monotonic() - t0
-    print(f"done: {done} rows written -> {args.out}  ({elapsed:.1f}s)")
+    print(f"\ndone: {done} rows written -> {args.out}  ({elapsed:.1f}s)")
 
 
 if __name__ == "__main__":
