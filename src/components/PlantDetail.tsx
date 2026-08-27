@@ -11,16 +11,29 @@ import PlantForm from "./PlantForm";
 import { generateCareNotes, lightBandLabel, waterBandLabel } from "../lib/careTips";
 import { SD_USDA_ZONES, SD_SUNSET_ZONES, hasAnyZoneData } from "../lib/sanDiego";
 
+function isValidHttpUrl(url: string): boolean {
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === "http:" || parsed.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
 function renderNotes(text: string) {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, i) => {
     const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (m) {
-      return (
-        <a key={i} href={m[2]} target="_blank" rel="noreferrer" className="text-klr-700 underline">
-          {m[1]}
-        </a>
-      );
+      const url = m[2];
+      if (isValidHttpUrl(url)) {
+        return (
+          <a key={i} href={url} target="_blank" rel="noreferrer" className="text-klr-700 underline">
+            {m[1]}
+          </a>
+        );
+      }
+      return <span key={i}>{m[1]}</span>;
     }
     return <span key={i}>{part}</span>;
   });
@@ -75,7 +88,7 @@ export default function PlantDetail() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6">
-      <button onClick={() => navigate(-1)} className="mb-4 flex items-center gap-1 text-sm text-gray-500 hover:text-gray-800">
+      <button onClick={() => navigate("/")} className="mb-4 flex items-center gap-1 text-sm text-gray-500 hover:text-gray-800">
         <ArrowLeft className="h-4 w-4" /> Back to catalog
       </button>
 
@@ -139,7 +152,7 @@ export default function PlantDetail() {
             >
               <Trash2 className="h-4 w-4" /> Remove
             </button>
-            {plant.sourceUrl && (
+            {plant.sourceUrl && isValidHttpUrl(plant.sourceUrl) && (
               <a
                 href={plant.sourceUrl}
                 target="_blank"

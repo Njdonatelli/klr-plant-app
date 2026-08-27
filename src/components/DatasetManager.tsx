@@ -34,6 +34,11 @@ export default function DatasetManager() {
   const [query, setQuery] = useState("");
 
   async function handleFile(file: File) {
+    const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
+    if (file.size > MAX_FILE_SIZE) {
+      setStatus("File is too large (max 10 MB). Please reduce the file size and try again.");
+      return;
+    }
     setBusy(true);
     setStatus(null);
     try {
