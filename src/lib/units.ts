@@ -6,7 +6,11 @@ export function metersToFeetLabel(min: number | null, max: number | null): strin
     const ft = m * M_TO_FT;
     return ft < 10 ? ft.toFixed(1) : Math.round(ft).toString();
   };
-  if (min != null && max != null) return `${fmt(min)}–${fmt(max)} ft`;
+  if (min != null && max != null) {
+    const fMin = fmt(min);
+    const fMax = fmt(max);
+    return fMin === fMax ? `${fMin} ft` : `${fMin}–${fMax} ft`;
+  }
   if (min != null) return `${fmt(min)}+ ft`;
   return `up to ${fmt(max as number)} ft`;
 }

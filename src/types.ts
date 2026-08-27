@@ -31,6 +31,7 @@ export interface Plant {
   supplementalNotes: string | null;
 
   imageUrl: string | null;
+  description?: string | null;
 
   // bookkeeping for user-managed data
   isCustom?: boolean;

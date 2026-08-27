@@ -8,7 +8,22 @@
   }
 }
 
+/* Elements only visible in print */
+.print-plant-list {
+  display: none;
+}
+.print-description {
+  display: none;
+}
+
 @media print {
+  /* ── Page Setup ── */
+  @page {
+    size: letter;
+    margin: 0.4in 0.5in 0.5in;
+  }
+
+  /* ── Base Visibility ── */
   body * {
     visibility: hidden;
   }
@@ -21,12 +36,160 @@
     left: 0;
     top: 0;
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .no-print {
     display: none !important;
   }
+
+  /* ── Ensure Colours Print ── */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ═══════════════════════════════════════
+     COVER PAGE
+     ═══════════════════════════════════════ */
+  .print-cover-page {
+    min-height: 100vh;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    break-after: page;
+    page-break-after: always;
+    margin-bottom: 0 !important;
+  }
+  .print-cover-title {
+    font-size: 32px !important;
+  }
+  .print-cover-page .print-cover-content {
+    width: 100%;
+  }
+  .print-plant-list {
+    max-width: 100% !important;
+  }
+  .print-plant-list table {
+    font-size: 11px !important;
+  }
+  .print-plant-list th,
+  .print-plant-list td {
+    padding: 4px 6px !important;
+  }
+
+  /* ═══════════════════════════════════════
+     PAGE-BREAK RULES
+     ═══════════════════════════════════════ */
   .print-break {
     page-break-before: always;
+    break-before: page;
+  }
+
+  /* ═══════════════════════════════════════
+     PLANT CARD — 2-COLUMN GRID
+     ═══════════════════════════════════════ */
+  .print-card {
+    display: grid !important;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    gap: 12px !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    box-shadow: none !important;
+    border-color: #d1d5db !important;
+    padding: 12px !important;
+    margin-bottom: 0 !important;
+    border-radius: 8px !important;
+  }
+
+  /* Left column: plant identity + care notes */
+  .print-card-left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* Right column: environment graphic (full height) */
+  .print-card-right {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0 !important;
+    padding: 6px !important;
+    border: none !important;
+    background: transparent !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* ── Plant Info Header (within left column) ── */
+  .print-card-header {
+    display: flex !important;
+    gap: 10px !important;
+  }
+  .print-card-header .aspect-square {
+    width: 90px !important;
+    height: 90px !important;
+    min-width: 90px !important;
+    flex-shrink: 0;
+  }
+  .print-card h2 {
+    font-size: 15px !important;
+  }
+  .print-card p {
+    font-size: 11px !important;
+  }
+
+  /* Description hidden on screen, shown in print */
+  .print-description {
+    display: block !important;
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+    margin-top: 4px !important;
+    color: #4b5563 !important;
+  }
+
+  /* ── Environment Graphic: Fill Right Column ── */
+  .print-env-graphic {
+    border-radius: 0 !important;
+  }
+  .print-env-graphic svg {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  /* ── Data Footer Row (Light / Water / Size) ── */
+  .print-env-graphic .grid {
+    margin-top: 4px !important;
+    padding-top: 6px !important;
+    gap: 4px !important;
+  }
+  .print-env-graphic .grid > div {
+    font-size: 10px !important;
+  }
+
+  /* ── Care Notes ── */
+  .print-care-notes {
+    margin-top: 8px !important;
+    padding-top: 6px !important;
+  }
+  .print-care-notes h3 {
+    font-size: 10px !important;
+    margin-bottom: 4px !important;
+  }
+  .print-care-notes ul {
+    gap: 1px !important;
+  }
+  .print-care-notes li {
+    font-size: 10px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 1px !important;
+  }
+
+  /* ── Card Spacing Between ── */
+  #print-root .space-y-8 > * + * {
+    margin-top: 0 !important;
   }
 }
 

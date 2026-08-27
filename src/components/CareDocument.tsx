@@ -4,8 +4,7 @@ import { ArrowLeft, Printer, FileDown, ArrowUp, ArrowDown, X } from "lucide-reac
 import { useStore } from "../store/useStore";
 import { CATEGORY_LABELS, NON_PLANT_CATEGORIES } from "../types";
 import ImagePlaceholder from "./ImagePlaceholder";
-import Gauge from "./Gauge";
-import SizeChart from "./SizeChart";
+import EnvironmentGraphic from "./EnvironmentGraphic";
 import ZoneBadge from "./ZoneBadge";
 import { generateCareNotes, lightBandLabel, waterBandLabel } from "../lib/careTips";
 import { exportCareDocumentDocx } from "../lib/exportDocx";
@@ -105,23 +104,52 @@ export default function CareDocument() {
       </div>
 
       <div id="print-root">
-        <div className="mb-10 text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Plant Care Guide</h1>
-          <p className="mt-1 text-sm text-gray-500">Prepared by {meta.preparedBy || "KLR Build Teams"}</p>
-          {(meta.clientName || meta.propertyAddress || meta.date) && (
-            <div className="mx-auto mt-4 max-w-md rounded-lg border border-gray-200 p-3 text-left text-sm text-gray-600">
-              {meta.clientName && <div><span className="font-medium text-gray-800">Client:</span> {meta.clientName}</div>}
-              {meta.propertyAddress && <div><span className="font-medium text-gray-800">Property:</span> {meta.propertyAddress}</div>}
-              {meta.date && <div><span className="font-medium text-gray-800">Date:</span> {meta.date}</div>}
+        {/* ═══ COVER PAGE (print-only full page; on screen just a header) ═══ */}
+        <div className="print-cover-page mb-10 text-center">
+          <div className="print-cover-content">
+            <h1 className="text-3xl font-bold text-gray-900 print-cover-title">Plant Care Guide</h1>
+            <p className="mt-1 text-sm text-gray-500">Prepared by {meta.preparedBy || "KLR Build Teams"}</p>
+            {(meta.clientName || meta.propertyAddress || meta.date) && (
+              <div className="mx-auto mt-4 max-w-md rounded-lg border border-gray-200 p-3 text-left text-sm text-gray-600">
+                {meta.clientName && <div><span className="font-medium text-gray-800">Client:</span> {meta.clientName}</div>}
+                {meta.propertyAddress && <div><span className="font-medium text-gray-800">Property:</span> {meta.propertyAddress}</div>}
+                {meta.date && <div><span className="font-medium text-gray-800">Date:</span> {meta.date}</div>}
+              </div>
+            )}
+
+            {/* Plant List / Table of Contents */}
+            <div className="print-plant-list mx-auto mt-8 max-w-2xl text-left">
+              <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-500">Plants in This Guide</h2>
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-gray-300 text-left text-xs uppercase tracking-wide text-gray-400">
+                    <th className="pb-2 font-medium">#</th>
+                    <th className="pb-2 font-medium">Common Name</th>
+                    <th className="pb-2 font-medium">Botanical Name</th>
+                    <th className="pb-2 font-medium">Category</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {selectedPlants.map((plant, i) => (
+                    <tr key={plant.id} className="border-b border-gray-100">
+                      <td className="py-1.5 text-gray-400">{i + 1}</td>
+                      <td className="py-1.5 font-medium text-gray-800">{plant.commonName}</td>
+                      <td className="py-1.5 italic text-gray-500">{plant.botanicalName || "—"}</td>
+                      <td className="py-1.5 text-gray-500">{CATEGORY_LABELS[plant.category] ?? plant.category}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-          )}
+          </div>
         </div>
 
+        {/* ═══ PLANT CARDS ═══ */}
         <div className="space-y-8">
           {selectedPlants.map((plant, i) => {
             const isMaterial = NON_PLANT_CATEGORIES.has(plant.category);
             return (
-              <div key={plant.id} className={`rounded-xl border border-gray-200 bg-white p-5 shadow-sm ${i > 0 ? "print-break" : ""}`}>
+              <div key={plant.id} className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm print-card print-break">
                 <div className="no-print mb-3 flex items-center gap-2">
                   <button onClick={() => move(plant.id, -1)} className="rounded border border-gray-200 p-1 text-gray-400 hover:text-gray-700">
                     <ArrowUp className="h-3.5 w-3.5" />
@@ -137,38 +165,35 @@ export default function CareDocument() {
                   </button>
                 </div>
 
-                <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-                  <div className="aspect-square overflow-hidden rounded-lg border border-gray-200">
-                    <ImagePlaceholder category={plant.category} imageUrl={plant.imageUrl} />
-                  </div>
-                  <div className="sm:col-span-2">
-                    <div className="text-xs font-medium uppercase tracking-wide text-klr-600">
-                      {CATEGORY_LABELS[plant.category] ?? plant.category}
+                {/* ── Left Column (print): plant identity + care notes ── */}
+                <div className="print-card-left">
+                  <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 print-card-header">
+                    <div className="aspect-square overflow-hidden rounded-lg border border-gray-200">
+                      <ImagePlaceholder category={plant.category} imageUrl={plant.imageUrl} />
                     </div>
-                    <h2 className="text-xl font-bold text-gray-900">{plant.commonName}</h2>
-                    <p className="italic text-gray-500">{plant.botanicalName || "—"}</p>
-                    {!isMaterial && (
-                      <div className="mt-2">
-                        <ZoneBadge plant={plant} />
+                    <div className="sm:col-span-2">
+                      <div className="text-xs font-medium uppercase tracking-wide text-klr-600">
+                        {CATEGORY_LABELS[plant.category] ?? plant.category}
                       </div>
-                    )}
+                      <h2 className="text-xl font-bold text-gray-900">{plant.commonName}</h2>
+                      <p className="italic text-gray-500">{plant.botanicalName || "—"}</p>
+                      {plant.description && (
+                        <p className="mt-2 text-sm text-gray-600 print-description">{plant.description}</p>
+                      )}
+                      {!isMaterial && (
+                        <div className="mt-2">
+                          <ZoneBadge plant={plant} />
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
 
-                {isMaterial ? (
-                  <p className="mt-4 text-sm italic text-gray-500">
-                    Material / hardgood item -- included as a line item; no plant care requirements apply.
-                  </p>
-                ) : (
-                  <>
-                    <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2">
-                      <div className="space-y-4">
-                        <Gauge label="Light" min={plant.lightMinHrs} max={plant.lightMaxHrs} scaleMax={8} unit="hrs/day" bandLabel={lightBandLabel(plant)} colorClass="bg-amber-400" />
-                        <Gauge label="Water" min={plant.waterMinInWk} max={plant.waterMaxInWk} scaleMax={2} unit="in/wk" bandLabel={waterBandLabel(plant)} colorClass="bg-sky-500" />
-                      </div>
-                      <SizeChart heightMinM={plant.heightMinM} heightMaxM={plant.heightMaxM} widthMinM={plant.widthMinM} widthMaxM={plant.widthMaxM} />
-                    </div>
-                    <div className="mt-4 border-t border-gray-100 pt-3">
+                  {isMaterial ? (
+                    <p className="mt-4 text-sm italic text-gray-500">
+                      Material / hardgood item -- included as a line item; no plant care requirements apply.
+                    </p>
+                  ) : (
+                    <div className="mt-4 border-t border-gray-100 pt-3 print-care-notes">
                       <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">Care Notes</h3>
                       <ul className="space-y-1.5 text-sm text-gray-700">
                         {generateCareNotes(plant).map((n, idx) => (
@@ -179,7 +204,27 @@ export default function CareDocument() {
                         ))}
                       </ul>
                     </div>
-                  </>
+                  )}
+                </div>
+
+                {/* ── Right Column (print): environment graphic ── */}
+                {!isMaterial && (
+                  <div className="mt-5 sm:mt-6 rounded-xl border border-gray-100 bg-gray-50/50 p-4 sm:p-5 print-card-right print-env-graphic">
+                    <EnvironmentGraphic
+                      lightMin={plant.lightMinHrs}
+                      lightMax={plant.lightMaxHrs}
+                      lightScaleMax={8}
+                      lightBandLabel={lightBandLabel(plant)}
+                      waterMin={plant.waterMinInWk}
+                      waterMax={plant.waterMaxInWk}
+                      waterScaleMax={Math.max(2, plant.waterMaxInWk ?? 0)}
+                      waterBandLabel={waterBandLabel(plant)}
+                      heightMinM={plant.heightMinM}
+                      heightMaxM={plant.heightMaxM}
+                      widthMinM={plant.widthMinM}
+                      widthMaxM={plant.widthMaxM}
+                    />
+                  </div>
                 )}
               </div>
             );

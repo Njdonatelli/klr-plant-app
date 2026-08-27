@@ -4,8 +4,7 @@ import { ArrowLeft, Check, Plus, Pencil, Trash2, ExternalLink, Leaf, Info } from
 import { useStore } from "../store/useStore";
 import { CATEGORY_LABELS, NON_PLANT_CATEGORIES } from "../types";
 import ImagePlaceholder from "./ImagePlaceholder";
-import Gauge from "./Gauge";
-import SizeChart from "./SizeChart";
+import EnvironmentGraphic from "./EnvironmentGraphic";
 import ZoneBadge from "./ZoneBadge";
 import PlantForm from "./PlantForm";
 import { generateCareNotes, lightBandLabel, waterBandLabel } from "../lib/careTips";
@@ -26,25 +25,90 @@ function renderNotes(text: string) {
   });
 }
 
-function ZoneChips({ all, active, label }: { all: number[]; active: number[]; label: string }) {
+function ZoneGauge({
+  label,
+  all,
+  active,
+  sdZones,
+  rangeText,
+  colorClass,
+}: {
+  label: string;
+  all: number[];
+  active: number[];
+  sdZones: number[];
+  rangeText: string | null;
+  colorClass: string;
+}) {
+  const sortedActive = [...active].sort((a, b) => a - b);
+  const lo = sortedActive.length > 0 ? sortedActive[0] : null;
+  const hi = sortedActive.length > 0 ? sortedActive[sortedActive.length - 1] : null;
+  const scaleMin = all[0];
+  const scaleMax = all[all.length - 1];
+  const range = scaleMax - scaleMin;
+  const hasData = lo != null && hi != null;
+  const leftPct = hasData ? ((lo - scaleMin) / range) * 100 : 0;
+  const widthPct = hasData ? Math.max(3, ((hi - lo) / range) * 100) : 0;
+  // SD county reference band
+  const sdLo = sdZones[0];
+  const sdHi = sdZones[sdZones.length - 1];
+  const sdLeftPct = ((sdLo - scaleMin) / range) * 100;
+  const sdWidthPct = Math.max(3, ((sdHi - sdLo) / range) * 100);
+
+  const overlapLo = hasData ? Math.max(lo, sdLo) : null;
+  const overlapHi = hasData ? Math.min(hi, sdHi) : null;
+  const overlaps = overlapLo != null && overlapHi != null && overlapLo <= overlapHi;
+
+  const bandLabel = hasData
+    ? `Zones ${lo}${hi !== lo ? `–${hi}` : ""}${overlaps ? " · overlaps SD County" : " · no SD County overlap"}`
+    : null;
+
   return (
     <div>
-      <div className="mb-1 text-xs font-medium uppercase tracking-wide text-gray-400">{label}</div>
-      <div className="flex flex-wrap gap-1">
-        {all.map((z) => {
-          const on = active.includes(z);
-          return (
-            <span
-              key={z}
-              className={`flex h-6 min-w-[1.5rem] items-center justify-center rounded px-1 text-[11px] font-medium ${
-                on ? "bg-klr-600 text-white" : "bg-gray-100 text-gray-300"
-              }`}
-            >
-              {z}
-            </span>
-          );
-        })}
+      <div className="mb-1 flex items-baseline justify-between">
+        <span className="text-sm font-medium text-gray-700">{label}</span>
+        <span className="text-sm text-gray-500">
+          {rangeText || (hasData ? `Zones ${lo}–${hi}` : "no data")}
+        </span>
       </div>
+      <div className="relative h-6 w-full">
+        {/* Track background */}
+        <div className="absolute top-1/2 -translate-y-1/2 h-2 w-full rounded-full bg-gray-100" />
+        
+        {/* SD county reference band */}
+        <div
+          className="absolute top-0 h-full rounded-md bg-emerald-100 border border-emerald-300 shadow-sm"
+          style={{ left: `${sdLeftPct}%`, width: `${sdWidthPct}%` }}
+        />
+        
+        {/* Plant's active zone band (Base / Caution) */}
+        {hasData && (
+          <div
+            className="absolute top-1/2 -translate-y-1/2 h-2 rounded-full"
+            style={{ 
+              left: `${leftPct}%`, 
+              width: `${widthPct}%`,
+              backgroundImage: "repeating-linear-gradient(45deg, #fcd34d, #fcd34d 4px, #f59e0b 4px, #f59e0b 8px)"
+            }}
+          />
+        )}
+        
+        {/* Plant's active zone band (Overlap / Optimal) */}
+        {hasData && overlaps && (
+          <div
+            className={`absolute top-1/2 -translate-y-1/2 h-2 ${colorClass}`}
+            style={{ 
+              left: `${((overlapLo! - scaleMin) / range) * 100}%`, 
+              width: `${Math.max(overlapLo === overlapHi ? 3 : 0, ((overlapHi! - overlapLo!) / range) * 100)}%`,
+              borderTopLeftRadius: overlapLo === lo ? '9999px' : '0',
+              borderBottomLeftRadius: overlapLo === lo ? '9999px' : '0',
+              borderTopRightRadius: overlapHi === hi ? '9999px' : '0',
+              borderBottomRightRadius: overlapHi === hi ? '9999px' : '0',
+            }}
+          />
+        )}
+      </div>
+      {bandLabel && <div className="mt-1 text-xs font-medium text-klr-700">{bandLabel}</div>}
     </div>
   );
 }
@@ -57,6 +121,11 @@ export default function PlantDetail() {
   const toggleSelected = useStore((s) => s.toggleSelected);
   const deletePlant = useStore((s) => s.deletePlant);
   const [editing, setEditing] = useState(false);
+
+  const maxWaterAcrossAllPlants = useStore((s) => 
+    Math.max(0, ...s.plants.map(p => Math.max(p.waterMinInWk ?? 0, p.waterMaxInWk ?? 0)))
+  );
+  const dynamicWaterScaleMax = Math.ceil(maxWaterAcrossAllPlants) + 2;
 
   if (!plant) {
     return (
@@ -74,7 +143,7 @@ export default function PlantDetail() {
   const sdSuited = hasAnyZoneData(plant);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6">
+    <div className="mx-auto max-w-5xl px-3 sm:px-4 py-4 sm:py-6">
       <button onClick={() => navigate(-1)} className="mb-4 flex items-center gap-1 text-sm text-gray-500 hover:text-gray-800">
         <ArrowLeft className="h-4 w-4" /> Back to catalog
       </button>
@@ -90,7 +159,7 @@ export default function PlantDetail() {
           <div className="mb-1 text-xs font-medium uppercase tracking-wide text-klr-600">
             {CATEGORY_LABELS[plant.category] ?? plant.category}
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">{plant.commonName}</h1>
+          <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{plant.commonName}</h1>
           <p className="italic text-gray-500">{plant.botanicalName || "Botanical name not recorded"}</p>
 
           <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -150,6 +219,12 @@ export default function PlantDetail() {
               </a>
             )}
           </div>
+          
+          {plant.description && (
+            <div className="mt-6 text-gray-700">
+              <p className="whitespace-pre-wrap">{plant.description}</p>
+            </div>
+          )}
         </div>
       </div>
 
@@ -162,70 +237,57 @@ export default function PlantDetail() {
           </p>
         </div>
       ) : (
-        <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-gray-500">Care Requirements</h2>
-            <div className="space-y-5">
-              <Gauge
-                label="Light"
-                min={plant.lightMinHrs}
-                max={plant.lightMaxHrs}
-                scaleMax={8}
-                unit="hrs/day"
-                bandLabel={lightBandLabel(plant)}
-                colorClass="bg-amber-400"
-              />
-              <Gauge
-                label="Water"
-                min={plant.waterMinInWk}
-                max={plant.waterMaxInWk}
-                scaleMax={2}
-                unit="in/wk"
-                bandLabel={waterBandLabel(plant)}
-                colorClass="bg-sky-500"
+        <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
+          {/* Care & Environment Card */}
+          <div className="rounded-xl border border-gray-200 bg-white p-3 sm:p-5 shadow-sm lg:col-span-2">
+            <h2 className="mb-3 sm:mb-4 text-sm font-semibold uppercase tracking-wide text-gray-500">Care & Mature Size</h2>
+            <div className="space-y-6">
+              <EnvironmentGraphic
+                lightMin={plant.lightMinHrs}
+                lightMax={plant.lightMaxHrs}
+                lightScaleMax={8}
+                lightBandLabel={lightBandLabel(plant)}
+                waterMin={plant.waterMinInWk}
+                waterMax={plant.waterMaxInWk}
+                waterScaleMax={dynamicWaterScaleMax}
+                waterBandLabel={waterBandLabel(plant)}
+                heightMinM={plant.heightMinM}
+                heightMaxM={plant.heightMaxM}
+                widthMinM={plant.widthMinM}
+                widthMaxM={plant.widthMaxM}
               />
             </div>
           </div>
 
-          <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-gray-500">Mature Size</h2>
-            <SizeChart
-              heightMinM={plant.heightMinM}
-              heightMaxM={plant.heightMaxM}
-              widthMinM={plant.widthMinM}
-              widthMaxM={plant.widthMaxM}
-            />
-          </div>
-
-          <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm lg:col-span-2">
+          <div className="rounded-xl border border-gray-200 bg-white p-3 sm:p-5 shadow-sm lg:col-span-2">
             <h2 className="mb-1 text-sm font-semibold uppercase tracking-wide text-gray-500">
               San Diego County Hardiness Fit
             </h2>
             <p className="mb-4 text-xs text-gray-400">
-              Highlighted zones are the zone bands this plant is rated for. Darker chips overlapping the
-              green-highlighted "SD County" reference row indicate a strong regional fit for KLR's Oceanside /
-              North County service area and typical inland San Diego valley sites.
+              Solid colored bars indicate the full range of zones this plant is rated for. The light green background 
+              band marks the typical zones for KLR's Oceanside / North County service area and inland San Diego valley sites. 
+              Overlap between the solid bar and the light green band indicates a strong regional fit.
             </p>
             {!sdSuited ? (
               <p className="text-sm text-gray-400">No USDA or Sunset zone data on file for this plant.</p>
             ) : (
-              <div className="space-y-4">
-                <div>
-                  <div className="mb-1 text-xs text-gray-400">
-                    USDA range on file: <span className="font-medium text-gray-600">{plant.usdaZoneText || "—"}</span>
-                  </div>
-                  <ZoneChips all={Array.from({ length: 13 }, (_, i) => i + 1)} active={plant.usdaZones} label="USDA Zones (San Diego County ≈ 9–10)" />
-                </div>
-                <div>
-                  <div className="mb-1 text-xs text-gray-400">
-                    Sunset range on file: <span className="font-medium text-gray-600">{plant.sunsetZoneText || "—"}</span>
-                  </div>
-                  <ZoneChips
-                    all={Array.from({ length: 24 }, (_, i) => i + 1)}
-                    active={plant.sunsetZones}
-                    label="Sunset Zones (San Diego County ≈ 18–24)"
-                  />
-                </div>
+              <div className="space-y-5">
+                <ZoneGauge
+                  label="USDA Zones"
+                  all={Array.from({ length: 13 }, (_, i) => i + 1)}
+                  active={plant.usdaZones}
+                  sdZones={SD_USDA_ZONES}
+                  rangeText={plant.usdaZoneText || null}
+                  colorClass="bg-emerald-500"
+                />
+                <ZoneGauge
+                  label="Sunset Zones"
+                  all={Array.from({ length: 24 }, (_, i) => i + 1)}
+                  active={plant.sunsetZones}
+                  sdZones={SD_SUNSET_ZONES}
+                  rangeText={plant.sunsetZoneText || null}
+                  colorClass="bg-teal-500"
+                />
                 <div className="rounded-lg bg-gray-50 p-2 text-[11px] text-gray-400">
                   Reference bands used above: USDA {SD_USDA_ZONES.join("–")}, Sunset {SD_SUNSET_ZONES.join(", ")}.
                   High-elevation east-county sites (Julian, Mt. Laguna) fall outside this default band.

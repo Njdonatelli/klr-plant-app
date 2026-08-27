@@ -1,0 +1,4086 @@
+{
+  "total": 3427,
+  "noImageAvailable": 159,
+  "linkBroken": 1,
+  "backupNotLoaded": 1,
+  "backupBroken": 654,
+  "otherIssue": 0,
+  "good": 2612,
+  "issues": [
+    {
+      "name": "Profusion uzinnia",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sorbet Violet",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Edging Lobelia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Magellan uzinnia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Marigold, French Marigold",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Petunia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Marigold, French Marigold",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Polyanthus Primrose, English Primrose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tall Snapdragon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Autumn Fire Stonecrop, Sedum",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Blue Atoll Hen and Chicks",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Blue Cloud Echeveria",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Atlantis Stonecrop, Sedum",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Arrow Mexican Firecracker",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Beavertail Cactus",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Autumn Charm Stonecrop",
+      "issue": "backup links are not being loaded",
+      "detail": "No main link, backup works but not used"
+    },
+    {
+      "name": "Brilliant Stonecrop, Sedum",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Canary Island Flat Giant Houseleek",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Candelabra Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Carmen Houseleek, Hens & Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Century Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Century Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Century Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dark Purple Hen And Chicks",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Cobweb Houseleek, Hens & Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Desert Flamenco Yucca",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "First Lady Echeveria",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Flower Dust Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Finger Aloe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fire Spinner Ice Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fish Hooks Senecio",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ghost Aloe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Golden Sedum, Stonecrop",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Inkblot Mangave",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Hardy Yellow Ice Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hens and Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Giant Yucca",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Golden Sword Needle Palm",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Houseleek, Hen And Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Houseleek, Hens & Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "J. C. Raulston Hardy Century Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lady Aquarius Echeveria",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Lavender Lady Mangave",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Little Red Riding Hood Aloe",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "John Creech Stonecrop, Two Row Stonecrop",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Kara's Stripes Fox Tail Agave",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Kiwi Stripe Aeonium",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Liuzard's Tail, Watch Chain, Princess Pine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mexican Hens and Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mistletoe Cactus",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Molded Wax Echeveria",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Nova Agave",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Octopus Agave",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Our Lord's Candle, Spanish Bayonet, Chaparral Yucca",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pacific Shadows Houseleek, Hens & Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pale Leaf Yucca",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Echeveria",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Pink Frills Hens and Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Purple Pinwheel Aeonium",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Aloe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Aloe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Beauty Houseleek, Hens & Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Heart Houseleek, Hens & Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Mountain Ice Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Safari Rose Aloe",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sea Lettuce, Coast Dudleya",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Pacific Stonecrop",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Salad Bowl Saucer Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Salsa Verde Stonecrop",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Santa Barbara Island Live-Forever",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sapphire Skies Beaked Yucca",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Smooth Agave",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Springtime Crassula",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sunsparkler Cherry Tart Stonecrop",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sunsparkler Firecracker Stonecrop",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Soap Aloe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Spring Beauty Houseleek, Hens & Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tangerine Aloe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Texas Sotol",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Variegated Blue Glow Agave, Snow Glow Agave",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Tricolor Stonecrop, Two Row Stonecrop",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Torch Plant, Lace Aloe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tuolumne River Canyon Live-Forever",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Twisted Leaf Yucca",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Virgil Houseleek, Hens & Chicks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Weber's Blue Agave, Tequila Agave",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Album Elegans Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Autumn Bonfire Encore Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Autumn Moonlight Encore Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Autumn Rouge Encore Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "White Cloud Echeveria",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Yellow-Striped Century Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Alba Plena Camellia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Black Widow Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Boule de Neige Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Chionoides Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Coastal Spice Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Ebony Pearl Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Glory of Sunnyhill Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Golden Gate Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Gumpo Pink Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Gumpo White Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Harvest Moon Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Hexe Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Hotei Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Gold Prinuz Rhododendron",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Oku Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "P.J.M. Rhododendron (PJM)",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Nuccio's Jewel Camellia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pearl Maxwell Camellia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Polarnacht, Polar Night Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Pride of Dorking Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Purpureum Elegans Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Rimini Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Rosebud Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Seaview Sunset Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sherwood Red Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Purple Catawba Rhododendron",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Southern Charm Auzalea",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Wojnar's Purple Rhododendron",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Western Auzalea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Swan Camellia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Assorted Mango Varieties",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Atwood Navel Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dobashi Beni Satsuma Mandarin",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Carman Hass, A-Type Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Clementine Mandarin",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dancy Tangerine, Dancy Mandarin",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Gem Avocado, A-Type Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lisbon Lemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mexicola Avocado, A-Type Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Midknight Valencia Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Miho Wase Satsuma Mandarin",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Nabal Avocado, B-Type Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Page Mandarin",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Powell Navel Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sanguinelli Sweet Blood Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sir Priuze Avocado, B-Type Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Super Nova Mandarin",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tahoe Gold Mandarin",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tango Mandarin (Seedless)",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tarocco Sweet Blood Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Washington Navel Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "uzutano Avocado, B-Type Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Arrow Juniper",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Crystal Blue Fern Pine, Yellow-wood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dwarf Italian Cypress",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Italian Cypress",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Monkey Puuzuzle Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Prince Of Wales Juniper",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Alpine Currant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Soquel Coast Redwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Thunderhead Japanese Black Pine",
+      "issue": "backup link is broken",
+      "detail": "Main link broken, backup also broken (getaddrinfo ENOTFOUND inaturalist-open-data.s3.amauzonaws.com)"
+    },
+    {
+      "name": "Arabian Lilac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Beyond Midnight Bluebeard",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bliuzuzard Mock Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Enchantress Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Jangles Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bobo Panicle Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Buttons 'N Bows Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dwarf Blue Chip Butterfly Bush, Summer Lilac",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Cityline Paris Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dancing Tassels Chaparral Currant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Double Play Doouzie Spiraea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dwarf Pomegranate",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dwarf Winged Burning Bush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Flutterby Petite Butterflu Bush, Summer Lilac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Golden American Elderberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Golden Currant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Goldmound Japanese Spirea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Henry's Garnet Virginia Sweetspire",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ignite Scarlet St. John'S Wort",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Invincibelle Ruby Smooth Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Korean Spice Viburnum, Koreanspice",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lavender Chiffon Rose Of Sharon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Leah White Butterfly Bush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lemon Candy Common Ninebark",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Limelight Prime Panicle Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Merrit's Supreme Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Midwinter Fire Bloodtwig Dogwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Munchkin Oakleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Nanho Blue Butterfly Bush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Elf Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pistachio Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Plumeria, Temple Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pocahontas Canadian Lilac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Popcorn Japanese Snowball",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Purple Pillar Rose of Sharon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red 'N Pretty Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Queen Of Hearts Oakleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ruby Slippers Oakleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Seaside Serenade Bar Harbor Smooth Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sister Theresa Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Snowcicle Oakleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Squawbush, Skunkbush, Three Leaf Sumac, Basket Bush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Summer Crush Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Summer Wine Common Ninebark, Seward Common Ninebark",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sunjoy Gold Barberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Teller Blue Bigleaf Hydrangea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tilden Park Common Snowberry, Waxberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Variegated Tatarian Dogwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Chinquapin Oak, Chinkapin White Oak, Yellow Chestnut Oak",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Common Hackberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Desert Willow",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fort McNair Horsechestnut",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Exclamation London Plane Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Emerald Avenue Hornbeam",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Espresso Kentucky Coffee Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Firestarter Black Tupelo Tree, Firestarter Black Gum Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Flame Thrower Redbud",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Forest Green Italian Oak, Forest Green Hungarian Oak",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hana Matoi Laceleaf Japanese Maple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hong Kong Orchid Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Kentucky Coffee Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Koto No Ito Japanese Maple, Dancing Monkey Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lake County Strain Western Redbud",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mesa Glow Maple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Persian Parrotia, Persian Ironwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Heartbreaker Weeping Eastern Redbud",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Prairifire Crabapple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rio Grande Ariuzona Ash",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rising Fire American Hornbeam",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rocky Mountain Glow Maple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rosy Teacups Dogwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Royal Raindrops Crabapple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ruby Falls Weeping Eastern Redbud",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ruby Vase Persian Parrotia, Persian Ironwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Skinny Genes English x White Hybrid Oak",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Streetspire English Oak, White Oak",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Shirobana Chinese Redbud",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Siebold's Maple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sioux Crape Myrtle",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Slender Silhouette American Sweetgum",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tina Sargent Crabapple",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Texas Redbud",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tiger Rose Japanese Maple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Upright-Narrow Red Maple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Urban Pinnacle Oak",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Alder",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Citrus Leaf Miner Trap/Lure",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "DeWitt Weed Barrier",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Dramm Shut-Off Valve Aluminum",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Monterey Florel Growth Regulator",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Tarp Burlap",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Baby Cakes Thornless Dwarf Blackberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Biloxi Blueberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Black Jack Fig",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bluejay Blueberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Cabernet Splash Blueberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Chardonnay Wine Grape",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Crimson Seedless European Grape",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Criollo Mango",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Double Mahoi Banana Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Florida Rose Rabbiteye Blueberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Frantoio Olive",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Garden Prince Dwarf Almond",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Golden Muscat White Grape",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Harcot Apricot",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Harglow Apricot",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Interlaken Seedless Table Grape",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Kiwi Magic Hardy Kiwi Combination",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Meeker Red Raspberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Navajo Blackberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Northern California Black Walnut, Hinds' Black Walnut",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Petacon Mango",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Lemonade Blueberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Pearl Apple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Raspberry Shortcake Dwarf Thornless Raspberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Redhaven Peach",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Royal Lee Sweet Cherry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Shangri La Fruiting Mulberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Shinseiki Asian Pear",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Spicy Italian Oregano",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Amethyst Coast Rosemary",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Tomcot Apricot",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Vintage Raspberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Von Thornless Blackberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Winter Pearmain Apple",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Yellow Guava, Lemon Guava",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Arrowleaf Buckwheat",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ashyleaf Buckwheat, Coastal Buckwheat",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Auzureum Bush Germander",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bennet's White Rock Rose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bloomify Lantana",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bonfire Heavenly Bamboo, Bonfire Sacred Bamboo",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Boule Rosemary",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Boxleaf Euonymus",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bredon Springs Tree Mallow",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bronuzeteppich Sunrose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Brothers Pincushion",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Burgundy Peppermint Tree, Australian Willow Myrtle",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Cavatine Japanese Andromeda, Lily of the Valley",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Centennial California Lilac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Chef's Choice Rosemary",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Common Boxwood, English Boxwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Common Boxwood, English Boxwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coyote Brush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coyote Brush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Edward Bowles Jerusalem Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ghostly Manuzanita",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Giant Orange Nodding Pincushion",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Gold Fingers Mexican Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Golden Kannah Creek Sulfur Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Goldie Nodding Pincushion",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Goldstone Mexican Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Green Beauty Japanese Boxwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Green Beauty Japanese Boxwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Green Supreme Bearberry, Green Supreme Kinnickinnick",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Green Tower Common Boxwood, English Boxwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Harbor Belle Heavenly Bamboo",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hawaii Sunrise Cone Bush",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Hartswood Ruby Sunrose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Heart's Desire California Lilac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Inca Gold Cone Bush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Island Snapdragon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ivory Sheen Kohuhu",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Irene Rosemary, Trailing Blue Rosemary",
+      "issue": "backup link is broken",
+      "detail": "Main link broken, backup also broken (getaddrinfo ENOTFOUND inaturalist-open-data.s3.amauzonaws.com)"
+    },
+    {
+      "name": "Jauzuz Hands Dwarf Pink Chinese Fringe Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Jauzuz Hands Mini Chinese Fringe Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lester Rowntree Manuzanita",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Lucky Lantern Red Flowering Maple",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Lemon Beauty Box Honeysuckle",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lilac Fuchsia, Tree Fuchsia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Little Drummer Boy Woolly Grevillea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Little Richard Glossy Abelia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lowboy Firethorn",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lucky Lantana",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mallet Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Meijima Variegated Winter Daphne",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mickie White Rockrose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Miniature Gardenia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Moonshadow Wintercreeper",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Naked Buckwheat",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Night Blooming Jessamine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Perfume Princess Winter Daphne",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Pacific Sunrise Mirror Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Petite White Oleander",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Cascade New uzealand Tea Tree, Manuka",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Ice Protea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Plum Hussey Mirror Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Poorinda Blonide Grevillea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Prelude Japanese Andromeda, Lily of the Valley",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Queen of Carpets Cotoneaster",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Diamond Chinese Fringe Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Roman Beauty Rosemary",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Santa Cruuz Island Buckwheat",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Seaside Kohuhu",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Silver Leafed Princess Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Silver Nugget Kohuhu",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Small Ball Coast Rosemary",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Snow Dance Chinese Fringe Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Spreading Bouquet Lantana",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Spreading Sunset Lantana",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Streibs Findling Cotoneaster",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Summer Snow Gardenia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sundance Mexican Orange",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sunrise Glossy Abelia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Turkish Sage, Jerusalem Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Variegated Boxleaf Auzara",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Variegated Boxleaf Euonymus",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Variegated Common Boxwood, English Boxwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Vintage Jade Evergreen Witch Hauzel",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Warren Roberts Pajaro Manuzanita",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White and Green Wintercreeper",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bonita Olive",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Carrotwood",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fine-Leafed Mallee, Dwarf Eucalyptus",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Interior Live Oak",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Purple Peppermint Tree, Australian Willow Myrtle",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Royal Fruitless Olive",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Russet Southren Magnolia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Variegated New uzealand Christmas Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Victoria Southern Magnolia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Fragrant Himalayan Champaca, Joy Perfume Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Australian Tree Fern",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tuberous Sword Fern, Kupukupu",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Fescue, Sheep Fescue",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Campo Auzul Autumn Moor Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Campo Verde Autumn Moor Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Carman's Gray Spreading Rush, Wire Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Del Sol Mat Rush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fountain Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Giant Feather Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Finescape Dwarf Mat Rush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Little Bluestem",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Okavanga Delta Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pacific Sky Mat Rush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Peruvian Feather Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Crystals Ruby Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Santa Barbara Sedge, Basket Sedge",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Shara River Mat Rush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Variegated Mat Rush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Westfield Sedge",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bismarck Palm",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Amauzon Red Parrot's Beak",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Angel Wings Sea Cabbage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Alexander's Great Siberian Bugloss",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Allegheny Spurge",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Amethyst Lips Autumn Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Amethyst Swan River Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Anouk White Spanish Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Babylon Purple Dinner Plate Dahlia",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Astrid Thomas Blue Marguerite",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Australian Violet",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bear's Foot Hellebore, Stinking Hellebore",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Beeuzee White English Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Belleuza White Gaura",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Beruzerkeley Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bill Wallis Cranesbill, Hardy Geranium",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Black Knight Pacific Giant Larkspur",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Blue Boa Hyssop",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Blue Fortune Hyssop",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Blauzing Fire Beggarticks",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Black & Bloom Salvia, Brauzilian Blue Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Jean Baby Russian Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Marvel Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue My Mind Brauzilian Dwarf Morning Glory",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Blue Prelude Catmint",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Spear English Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Waterfall Serbian Bellflower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Wonder Fan Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bountiful Seaside Daisy, Beach Aster",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bridal Wreath",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Brilliant Prairie Mallow",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bruce's Dwarf Spurge",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Buckeye Belle Peony",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Butterfly Weed",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blue Violet Tapien Verbena, Carpet of Blossoms",
+      "issue": "link is broken",
+      "detail": "Main link broken (timeout), no backup"
+    },
+    {
+      "name": "Camelot Hellebore",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Carnival Limeade Coral Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Carnival Watermelon Coral Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Cathedral Rose Beardtongue",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "California Aster",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "California Aster",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "California Fuchsia, Hummingbird Trumpet",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "California Mugwort, Sagewort",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "California Showy Milkweed",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Calistoga California Fuchsia, Hummingbird Trumpet",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Cha Cha Beardtongue",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Cherry Frost African Daisy",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Catherine De La Mare Foothill Penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Changeling Hybrid Monkey Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Chocolate Mint Pelargonium",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Climbing Penstemon, Heart-Leaved Penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dana's Dulcet Hellebore",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Dark n' Bright Coral Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Common Bleeding Heart",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Compact Light Pink Belleuza Gaura",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coral Canyon California Fuchsia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coronation Gold Fernleaf Yarrow",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Cranesbill, Carpet Geranium",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Creeping Jenny, Moneywort",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Creeping Checkerbloom, Checker Mallow",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Creeping Wire Vine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dalmatian Bellflower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dara's Choice Hybrid Sage, Creeping Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Darling Daisy Dwarf Shasta Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "David Verity Cigar Plant, Large Firecracker Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Doone Valley Lemon Thyme",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Desert Eve Terracotta Common Yarros, Milfoil",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Deutschland Astilbe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Diane's Gold Siberian Bugloss",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Double Fantasy Christmas Rose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Double Picotee Hellebore",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dreamland False Sea Thrift",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dwarf California White Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dwarf Heronsbill, Bishop's Form Alpine Geranium",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Edelweiss Lavandin, Hedge Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Elfin Creeping Thyme",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Emerald Blue Moss Pink, Moss Phlox",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Emerald Falls Ponysfoot, Silver Nickel Vine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Endurascape Verbena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Epic White Bacopa",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Evergreat Blue Spanish Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "False Heather, Mexican Heather, Hawaiian Heather",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Festive Maxima Peony",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fire and Ice Hellebore",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Firehouse Purple Verbena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Firehouse White Verbena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fireland Common Yarrow, Milfoil",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Firewitch Cheddar Pink",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "First Flush Lavender Evergreen Candytuft",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "FloriGlory Sofia Mexican Heather",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "FlowerPower Spider Series African Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "FlowerPower White Compact African Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Flowerpower Compact Purple African Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Foothills Beardtongue",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fragrant Pitcher Sage, Island Pitcher Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fred Boutin Lavandin, Hedge Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Fringed Bergenia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Frosty Kiss Gauzania",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Galaxy Glow Spurge",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ghostly Princess Spanish Lavender",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Golden Lemon Thyme",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Gray Leafed Trailing Gauzania",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Goldmarie Carpet Tickseed",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Glow Series Wallflower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Goldleaf Adriatic Bellflower, Harebell",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Green Carpet",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Heatwave Sage",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Green Lavender Cotton",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Gulliver Blue Bacopa",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Gulliver White Bacopa",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hardy Elephant's Ear",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Heartleaf Bergenia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Heliotrope",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hidcote Giant Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Homestead Red Hybrid Verbena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hummingbird Bush, Uruguayan Firecracker Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ice N' Roses Snow Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "June Plantain Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Indian Strawberry, Mock Strawberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ivory White Sticky Monkey Flower, Shrubby Monkey Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Javelin Deep Purple Spanish Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Kahori Pink",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Las Vegas Calla Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Kitten Around Catmint",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Kudo White Pincushion Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lake County Yarrow, Milfoil",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Large Firecracker Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lemon Light Autumn Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lemon Thyme",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Lillian's Pink Alum Root",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Little Miss Gina Peruvian Lily, Lily of the Incas",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Little Miss Tara Peruvian Lily, Lily Of The Incas",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Lipstick Autumn Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Little Cuties Shimmer Coral Bells",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lolly Marguerite Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Looking Glass Siberian Bugloss",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lucas Foxglove",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lucky Charm Japanese Anemone, Windflower",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Mercedes Calla Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Mauve Creeping Thyme, Mother Of Thyme",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lucid Dreams Vivid Coral Bells",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Madrid Purple Spanish Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lyrical White Meadow Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Madrid Rose Spanish Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mahogany Carpet Bugle",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Marin Pink California Fuchsia, Hummingbird Trumpet",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mattole River Humboldt County Fuchsia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Megacopa Bacopa",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mesa Yellow Blanket Flower",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Molly's White Hellebore",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Moon Dust Common Yarrow, Milfoil",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Mexican Bush Marigold",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mirage Cherry Red Autumn Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mirage Soft Pink Autumn Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mirage White Autumn Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mixed Colors Camelot Foxglove",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Montana De Oro Woodland Strawberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Moonlight Autumn Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mystic Enchantment Dahlia",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Noa Million Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Northern Exposure Silver Coral Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Opera African Daisy",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Pamina Japanese Anemone, Windflower",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "New uzealand Brass Buttons",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Orange King California Poppy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ostica Blue Eye African Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ostica Purple African Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pacific Frost Corsican Hellebore",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Paleo Yellow Brittlebrush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Peach Parfait Coral Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Pink Panther Coral Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Paul's Glory Plantain Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pandora Leopard Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Paseo Rancho Cedros Island Verbena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Common Thrift, Sea Pink",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pink Cranesbill, Pink Alpine Geranium",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pippa's Purple Hellebore",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Plum Crauzy Coral Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Princess Claire Peruvian Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Pink Tapien Verbena, Carpet of Blossoms",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Platinum Blonde English Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pocahontas Beardtongue",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Point Saint George California Aster",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Princess Letiuzia Peruvian Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Princess Tamara Peruvian Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Princess/Colorita Eliane Peruvian Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Purple Hauze Catmint",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Raspberry Splash Lungwort",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Purple Hauze California Aster",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Purple Mauzus",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Purple Sage, Gray Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Purple Yarrow, Milfoil",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Raspberry Sundae Peony",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red Beauty Heartleaf Bergenia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Redwood Sorrel, Oregon Oxalis",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rock Candy Blue Garden Penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rock Candy Pink Garden Penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rock Candy Purple Garden Penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rock Candy Ruby Garden Penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rosa Maria Common Yarrow, Milfoil",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rose Campion, Crown-Pink, Catchfly",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rose Marvel Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rosy Jane Beeblossom",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Scaevola 'Surdiva', Fan Flower",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Scarlet Parrot's Beak",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Scent First Passion Dianthus",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sandwort",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sarah Bernhardt Peony",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Semi-Trailing Treasure Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Serenity Lavender Frost African Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Silver Heart Siberian Bugloss",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Silver Spoons Shasta Daisy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Silver Thyme",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Single Pink Hellebore",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Single Red Hellebore",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sissinghurst White Lungwort",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Snow Cone Candytuft",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Stained Glass Plantain Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Snowstorm White Bacopa",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Snowsurfer Forte Candytuft",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sparkle White Beeblossom",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Spindrift Santa Barbara Daisy, Mexican Daisy, Fleabane",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Splendens Coral Bells",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Splendens Sea Thrift",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "St. Augustine Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "St. Ola Cranesbill",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Starlight Cuphea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Summer Snow California Fuchsia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sunrise Hyssop",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Terracotta Million Bells",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sunbathers Totonaca Treasure Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sunrise Coral Bells",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Superblue English Lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Toronto Rose Verbena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Treasure Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tutti Frutti Hyssop",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Uptick Cream & Red Tickseed",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Vavavoom Hellebore",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Variegated Big Leaf Periwinkle, Creeping Myrtle",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Vibrant Red Sticky Monkey Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Wasatch Fire Hummingbird Trumpet, California Fuchsia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Bacopa",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Creeping Thyme",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Giant Common Calla Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Gloria Astilbe",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Mauzus",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Mischief Mexican Bush Sage, Velvet Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Nancy Dead Nettle, Yellow Archangel",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Winter Joy Coral Bells",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Woodland Strawberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Yellow Pineleaf Penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Yerba Buena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Anthony Meilland Floribunda Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Black Baccara Hybrid Tea Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Cloud 10 Climbing Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Fame Hybrid Tea Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Full Sail Hybrid Tea Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Mother of Pearl Grandiflora Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Passionate Kisses Floribunda Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Pink Meidiland Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Plum Perfect Floribunda Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Polynesian Punch Floribunda Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sterling Silver Hybrid Tea Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Sugar Moon Hybrid Tea Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "White Dawn Climbing Rose",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "50/50 Blue Rye Sod",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "90/10 Tall Fescue",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Celebration Hybrid Bermuda Sod",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Delta Bluegrass Company Bolero Plus",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Delta Bluegrass Company Bolero Sod",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Enduro Dwarf Fescue",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "No Mow Fine Fescue Blend Sod",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Non-Native Mow Free",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Shade Blend",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Asahi Cast-Iron Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Astolat Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Aunt May Yellow Eyed Grass, Satin Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Autumn Red Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Auztec Chalice Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bush Princess Kangaroo Paw",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Auztec Grass Lily Turf",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Becca Blue Flax Lily, Becca Paroo Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Black Pantha Lily of the Nile",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blackberry Candy Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bush Pearl Dwarf Pink Kangaroo Paw",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Diablito Crocosmia",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Butterscotch Ruffles Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Cassa Blue Flax Lily, Paroo Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coolvista Dianella",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dwarf Yellow Poker, Torch Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Festival Burgundy Cordyline",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Dwarf Red New uzealand Flax",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Erika Montbretia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Evergreen Pink Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Frequent Flyer Reblooming Bearded Iris",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Getty White Lily of the Nile",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hemerocallis 'Yellow'",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Jump Red Kangaroo Paw",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Katrina Butterfly Iris, Wild Iris, Fortnight Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Limelight Poker, Torch Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Little Blue Fountain Lily Of The Nile",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Little Miss Sunshine Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Majestic Big Blue Lily Turf",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Monroe's White Lily Turf",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mood Indigo Lily of the Nile",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mountain Cabbage Tree, Blue Dracaena, Toi",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Phar Lap Kangaroo Paw (Green)",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Queen of the Nile Lily of the Nile",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rocky Point Dwarf Blue Eyed Grass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ruby Stella Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "San Marcos Yellow Bush Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Snow Queen Siberian Iris",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Striped Cast-Iron Plant, Variegated Cast-Iron Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Summer Wine Daylily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tasred Tasmanian Flax Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "White Sweet Garlic",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Yellow Striped Butterfly Iris, Wild Iris, Fairy Iris, Fortnight Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Cleopatra Canna Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Kreta Canna Lily",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Double White Angel's Trumpet",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lucifer Canna Lily",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "California Dutchman's Pipe, California Pipevine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Vancouver Fragrant Star Clematis",
+      "issue": "no image is available",
+      "detail": "Main says no image, no backup"
+    },
+    {
+      "name": "Shirobana Chocolate Vine, Fiveleaf Akebia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sunny Susy Series Black-Eyed Susan Vine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sweet Autumn Clematis",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Strawberry tree",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Pine",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Melaleuca",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "African Sumac",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Manuzanita",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "London Plane Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tecate cypress",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Eucalyptus",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Acacia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Jacaranda",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Brisbane Box",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "American Sweet Gum",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Cleveland sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Ceanothus / California lilac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lemonade berry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sugar bush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Hollyleaf cherry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coffeeberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bladderpod",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bottlebrush 'Little John'",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Escallonia",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Photinia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Laurel sumac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Scrub oak",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "San Diego mountain mahogany",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "San Diego sunflower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "French/English lavender",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rosemary",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coast/Australian rosemary",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rockrose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Grevillea",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Conebush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pride of Madeira",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Natal plum 'Boxwood Beauty'",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dwarf coyote bush",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Carmel creeper",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "India Hawthorne",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pittosporum",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Cotoneaster",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Tea Tree",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sumac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Manuzanita",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Wild Lilac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rockrose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Saltbush",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Creeping thyme",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Woolly thyme",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Catalina Cherry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rosemary",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Pyracantha",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Sage",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Mission Manuzanita",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Arabian Lilac",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bush mallow",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Chaparral yucca",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Dudleya / liveforever",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coast prickly pear",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "California fuchsia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Red buckwheat",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bush monkeyflower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Foothill penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Showy penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Margarita BOP penstemon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Baja bush snapdragon",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Kangaroo paw",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Kurapia",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "UC Verde buffalograss",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Creeping rosemary",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Grape",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rosemary, thyme, sage, oregano, marjoram",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Prickly pear",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Bougainvillea",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Red fescue",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Blackberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Elderberry",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Verbena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Myoporum",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Peruvian Verbena",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rosea Ice Plant",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Saltbush (creeping)",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "California Poppy",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lupine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bush Monkey Flower",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Rush Rose",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Deer Weed",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Arroyo Lupine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "San Diego sedge",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Purple needlegrass",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Alkali sacaton",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Canyon Prince giant rye",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Clustered field sedge",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Coast morning glory",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "California wild grape / Roger's Red",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Lilac vine",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    },
+    {
+      "name": "Bougainvillea",
+      "issue": "no image is available",
+      "detail": "Both URLs are empty"
+    },
+    {
+      "name": "Crape myrtle",
+      "issue": "backup link is broken",
+      "detail": "No main link, backup exists but is broken"
+    }
+  ]
+}

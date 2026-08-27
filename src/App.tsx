@@ -14,12 +14,13 @@ function NavLink({ to, children, icon: Icon }: { to: string; children: React.Rea
   return (
     <Link
       to={to}
-      className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+      className={`flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs sm:text-sm font-medium transition whitespace-nowrap ${
         active ? "bg-klr-600 text-white" : "text-gray-600 hover:bg-klr-50 hover:text-klr-700"
       }`}
     >
-      <Icon className="h-4 w-4" />
-      {children}
+      <Icon className="h-4 w-4 flex-shrink-0" />
+      <span className="hidden sm:inline">{children}</span>
+      <span className="sm:hidden">{children}</span>
     </Link>
   );
 }
@@ -28,20 +29,21 @@ function Nav() {
   const selectedCount = useStore((s) => s.selectedIds.size);
   return (
     <header className="no-print sticky top-0 z-30 border-b border-gray-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
-        <Link to="/" className="flex items-center gap-2 font-bold text-klr-800">
-          <Sprout className="h-6 w-6 text-klr-600" />
-          KLR Plant Care Builder
+      <div className="mx-auto flex max-w-7xl items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 flex-wrap">
+        <Link to="/" className="flex items-center gap-1.5 sm:gap-2 font-bold text-klr-800 text-sm sm:text-base">
+          <Sprout className="h-5 w-5 sm:h-6 sm:w-6 text-klr-600 flex-shrink-0" />
+          <span className="hidden xs:inline">KLR Plant Care Builder</span>
+          <span className="xs:hidden">KLR</span>
         </Link>
-        <nav className="ml-6 flex gap-1">
+        <nav className="ml-auto flex gap-1 flex-wrap">
           <NavLink to="/" icon={Sprout}>
             Catalog
           </NavLink>
           <NavLink to="/manage" icon={Database}>
-            Manage Dataset
+            Manage
           </NavLink>
           <NavLink to="/document" icon={FileText}>
-            Care Document{selectedCount > 0 ? ` (${selectedCount})` : ""}
+            Doc{selectedCount > 0 ? ` (${selectedCount})` : ""}
           </NavLink>
         </nav>
       </div>

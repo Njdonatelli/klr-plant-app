@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   TreePine,
   Trees,
@@ -59,12 +60,17 @@ interface Props {
 }
 
 export default function ImagePlaceholder({ category, imageUrl, className, iconClassName }: Props) {
-  if (imageUrl) {
+  const [errorUrl, setErrorUrl] = useState<string | null>(null);
+
+  const hasError = errorUrl === imageUrl;
+
+  if (imageUrl && !hasError) {
     return (
       <img
         src={imageUrl}
         alt=""
         className={className ?? "h-full w-full object-cover"}
+        onError={() => setErrorUrl(imageUrl)}
       />
     );
   }

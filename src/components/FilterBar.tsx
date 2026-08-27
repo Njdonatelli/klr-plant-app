@@ -1,5 +1,6 @@
 import { Search, X } from "lucide-react";
 import { CATEGORY_LABELS } from "../types";
+import DualRangeSlider from "./DualRangeSlider";
 
 export interface Filters {
   query: string;
@@ -8,6 +9,10 @@ export interface Filters {
   caNativeOnly: boolean;
   water: string;
   light: string;
+  minHeightFt: string;
+  maxHeightFt: string;
+  minWidthFt: string;
+  maxWidthFt: string;
 }
 
 export const DEFAULT_FILTERS: Filters = {
@@ -17,7 +22,13 @@ export const DEFAULT_FILTERS: Filters = {
   caNativeOnly: false,
   water: "",
   light: "",
+  minHeightFt: "",
+  maxHeightFt: "",
+  minWidthFt: "",
+  maxWidthFt: "",
 };
+
+
 
 interface Props {
   filters: Filters;
@@ -33,22 +44,25 @@ export default function FilterBar({ filters, onChange, categories, resultCount }
   const isDefault = JSON.stringify(filters) === JSON.stringify(DEFAULT_FILTERS);
 
   return (
-    <div className="flex flex-col gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-      <div className="flex flex-col gap-3 md:flex-row md:items-center">
-        <div className="relative flex-1">
-          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
-          <input
-            value={filters.query}
-            onChange={(e) => set("query", e.target.value)}
-            placeholder="Search common or botanical name…"
-            className="w-full rounded-lg border border-gray-300 py-2 pl-9 pr-3 text-sm focus:border-klr-500 focus:outline-none focus:ring-1 focus:ring-klr-500"
-          />
-        </div>
+    <div className="flex flex-col gap-3 rounded-xl border border-gray-200 bg-white p-3 sm:p-4 shadow-sm">
+      {/* Search - always full width */}
+      <div className="relative">
+        <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+        <input
+          value={filters.query}
+          onChange={(e) => set("query", e.target.value)}
+          placeholder="Search common or botanical name…"
+          className="w-full rounded-lg border border-gray-300 py-2 pl-9 pr-3 text-sm focus:border-klr-500 focus:outline-none focus:ring-1 focus:ring-klr-500"
+        />
+      </div>
+
+      {/* Filter selects - responsive grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3">
 
         <select
           value={filters.category}
           onChange={(e) => set("category", e.target.value)}
-          className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-klr-500 focus:outline-none"
+          className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-klr-500 focus:outline-none"
         >
           <option value="">All categories</option>
           {categories.map((c) => (
@@ -61,7 +75,7 @@ export default function FilterBar({ filters, onChange, categories, resultCount }
         <select
           value={filters.water}
           onChange={(e) => set("water", e.target.value)}
-          className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-klr-500 focus:outline-none"
+          className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-klr-500 focus:outline-none"
         >
           <option value="">Any water need</option>
           <option value="Low">Low water</option>
@@ -72,7 +86,7 @@ export default function FilterBar({ filters, onChange, categories, resultCount }
         <select
           value={filters.light}
           onChange={(e) => set("light", e.target.value)}
-          className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-klr-500 focus:outline-none"
+          className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-klr-500 focus:outline-none"
         >
           <option value="">Any light need</option>
           <option value="Shade">Shade</option>
@@ -81,6 +95,30 @@ export default function FilterBar({ filters, onChange, categories, resultCount }
           <option value="Partial Sun">Partial Sun</option>
           <option value="Full Sun">Full Sun</option>
         </select>
+
+        <DualRangeSlider
+          label="Height"
+          min={0}
+          max={100}
+          step={1}
+          valueLow={filters.minHeightFt ? Number(filters.minHeightFt) : 0}
+          valueHigh={filters.maxHeightFt ? Number(filters.maxHeightFt) : 100}
+          unit="ft"
+          onChangeLow={(v) => set("minHeightFt", v === 0 ? "" : String(v))}
+          onChangeHigh={(v) => set("maxHeightFt", v === 100 ? "" : String(v))}
+        />
+
+        <DualRangeSlider
+          label="Width"
+          min={0}
+          max={50}
+          step={1}
+          valueLow={filters.minWidthFt ? Number(filters.minWidthFt) : 0}
+          valueHigh={filters.maxWidthFt ? Number(filters.maxWidthFt) : 50}
+          unit="ft"
+          onChangeLow={(v) => set("minWidthFt", v === 0 ? "" : String(v))}
+          onChangeHigh={(v) => set("maxWidthFt", v === 50 ? "" : String(v))}
+        />
       </div>
 
       <div className="flex flex-wrap items-center gap-4">
@@ -93,15 +131,7 @@ export default function FilterBar({ filters, onChange, categories, resultCount }
           />
           San Diego County suited only
         </label>
-        <label className="flex items-center gap-2 text-sm text-gray-700">
-          <input
-            type="checkbox"
-            checked={filters.caNativeOnly}
-            onChange={(e) => set("caNativeOnly", e.target.checked)}
-            className="h-4 w-4 rounded border-gray-300 text-klr-600 focus:ring-klr-500"
-          />
-          California native only
-        </label>
+
 
         <span className="ml-auto text-sm text-gray-500">{resultCount.toLocaleString()} results</span>
 

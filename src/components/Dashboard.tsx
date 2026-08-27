@@ -28,8 +28,28 @@ export default function Dashboard() {
       if (filters.category && p.category !== filters.category) return false;
       if (filters.sdOnly && sdSuitability(p) !== "suited") return false;
       if (filters.caNativeOnly && !(p.caNative === "Yes" || p.caNative === "Y")) return false;
-      if (filters.water && waterBandLabel(p) !== filters.water) return false;
-      if (filters.light && lightBandLabel(p) !== filters.light) return false;
+      if (filters.water) { const wl = waterBandLabel(p); if (!wl || !wl.includes(filters.water)) return false; }
+      if (filters.light) { const ll = lightBandLabel(p); if (!ll || !ll.includes(filters.light)) return false; }
+      if (filters.minHeightFt) {
+        const minFt = parseFloat(filters.minHeightFt);
+        const hMax = p.heightMaxM ?? p.heightMinM;
+        if (hMax == null || hMax * 3.28084 < minFt) return false;
+      }
+      if (filters.maxHeightFt) {
+        const maxFt = parseFloat(filters.maxHeightFt);
+        const hMax = p.heightMaxM ?? p.heightMinM;
+        if (hMax == null || hMax * 3.28084 >= maxFt) return false;
+      }
+      if (filters.minWidthFt) {
+        const minFt = parseFloat(filters.minWidthFt);
+        const wMax = p.widthMaxM ?? p.widthMinM;
+        if (wMax == null || wMax * 3.28084 < minFt) return false;
+      }
+      if (filters.maxWidthFt) {
+        const maxFt = parseFloat(filters.maxWidthFt);
+        const wMax = p.widthMaxM ?? p.widthMinM;
+        if (wMax == null || wMax * 3.28084 >= maxFt) return false;
+      }
       return true;
     });
   }, [plants, filters]);
@@ -44,9 +64,9 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
+    <div className="mx-auto max-w-7xl px-3 sm:px-4 py-4 sm:py-6">
       <div className="mb-5">
-        <h1 className="text-2xl font-bold text-gray-900">Plant Catalog</h1>
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900">Plant Catalog</h1>
         <p className="text-sm text-gray-500">
           Browse the master catalog, filter for San Diego County conditions, and select
           varieties to include in a client care document.
@@ -60,7 +80,7 @@ export default function Dashboard() {
           No plants match these filters.
         </div>
       ) : (
-        <div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <div className="mt-4 sm:mt-5 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
           {pageItems.map((p) => (
             <PlantCard key={p.id} plant={p} />
           ))}

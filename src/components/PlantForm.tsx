@@ -40,6 +40,7 @@ function emptyPlant(): Plant {
     wucols: null,
     supplementalNotes: null,
     imageUrl: null,
+    description: null,
     isCustom: true,
   };
 }
@@ -172,6 +173,9 @@ export default function PlantForm({ plant, onClose }: Props) {
 
           <Field label="Source URL" full>
             <input className="input" value={form.sourceUrl ?? ""} onChange={(e) => set("sourceUrl", e.target.value || null)} />
+          </Field>
+          <Field label="Description" full>
+            <textarea className="input" rows={3} value={form.description ?? ""} onChange={(e) => set("description", e.target.value || null)} />
           </Field>
           <Field label="Notes" full>
             <textarea className="input" rows={3} value={form.supplementalNotes ?? ""} onChange={(e) => set("supplementalNotes", e.target.value || null)} />
