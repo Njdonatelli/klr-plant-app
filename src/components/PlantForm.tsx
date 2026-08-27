@@ -14,7 +14,7 @@ interface Props {
 
 function emptyPlant(): Plant {
   return {
-    id: `new-${Date.now()}`,
+    id: `new-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
     commonName: "",
     botanicalName: "",
     category: "evergreen-shrubs",
@@ -76,13 +76,32 @@ export default function PlantForm({ plant, onClose }: Props) {
       alert("Common name is required.");
       return;
     }
-    setSaving(true);
-    const usdaZones = expandZoneList(usdaText);
-    const sunsetZones = expandZoneList(sunsetText);
+
     const hMin = num(heightFt.min);
     const hMax = num(heightFt.max);
     const wMin = num(widthFt.min);
     const wMax = num(widthFt.max);
+
+    if (hMin != null && hMax != null && hMin > hMax) {
+      alert("Height minimum must be less than or equal to the maximum.");
+      return;
+    }
+    if (wMin != null && wMax != null && wMin > wMax) {
+      alert("Width minimum must be less than or equal to the maximum.");
+      return;
+    }
+    if (form.lightMinHrs != null && form.lightMaxHrs != null && form.lightMinHrs > form.lightMaxHrs) {
+      alert("Light hours minimum must be less than or equal to the maximum.");
+      return;
+    }
+    if (form.waterMinInWk != null && form.waterMaxInWk != null && form.waterMinInWk > form.waterMaxInWk) {
+      alert("Water needs minimum must be less than or equal to the maximum.");
+      return;
+    }
+
+    setSaving(true);
+    const usdaZones = expandZoneList(usdaText);
+    const sunsetZones = expandZoneList(sunsetText);
 
     const final: Plant = {
       ...form,
@@ -131,29 +150,29 @@ export default function PlantForm({ plant, onClose }: Props) {
           </Field>
 
           <Field label="Light Hours Min">
-            <input className="input" type="number" step="0.5" value={form.lightMinHrs ?? ""} onChange={(e) => set("lightMinHrs", num(e.target.value))} />
+            <input className="input" type="number" step="0.5" min="0" value={form.lightMinHrs ?? ""} onChange={(e) => set("lightMinHrs", num(e.target.value))} />
           </Field>
           <Field label="Light Hours Max">
-            <input className="input" type="number" step="0.5" value={form.lightMaxHrs ?? ""} onChange={(e) => set("lightMaxHrs", num(e.target.value))} />
+            <input className="input" type="number" step="0.5" min="0" value={form.lightMaxHrs ?? ""} onChange={(e) => set("lightMaxHrs", num(e.target.value))} />
           </Field>
 
           <Field label="Water Needs Min (in/wk)">
-            <input className="input" type="number" step="0.1" value={form.waterMinInWk ?? ""} onChange={(e) => set("waterMinInWk", num(e.target.value))} />
+            <input className="input" type="number" step="0.1" min="0" value={form.waterMinInWk ?? ""} onChange={(e) => set("waterMinInWk", num(e.target.value))} />
           </Field>
           <Field label="Water Needs Max (in/wk)">
-            <input className="input" type="number" step="0.1" value={form.waterMaxInWk ?? ""} onChange={(e) => set("waterMaxInWk", num(e.target.value))} />
+            <input className="input" type="number" step="0.1" min="0" value={form.waterMaxInWk ?? ""} onChange={(e) => set("waterMaxInWk", num(e.target.value))} />
           </Field>
 
           <Field label="Mature Height Min/Max (ft)">
             <div className="flex gap-2">
-              <input className="input" type="number" step="0.5" value={heightFt.min} onChange={(e) => setHeightFt((s) => ({ ...s, min: e.target.value }))} placeholder="min" />
-              <input className="input" type="number" step="0.5" value={heightFt.max} onChange={(e) => setHeightFt((s) => ({ ...s, max: e.target.value }))} placeholder="max" />
+              <input className="input" type="number" step="0.5" min="0" value={heightFt.min} onChange={(e) => setHeightFt((s) => ({ ...s, min: e.target.value }))} placeholder="min" />
+              <input className="input" type="number" step="0.5" min="0" value={heightFt.max} onChange={(e) => setHeightFt((s) => ({ ...s, max: e.target.value }))} placeholder="max" />
             </div>
           </Field>
           <Field label="Mature Width Min/Max (ft)">
             <div className="flex gap-2">
-              <input className="input" type="number" step="0.5" value={widthFt.min} onChange={(e) => setWidthFt((s) => ({ ...s, min: e.target.value }))} placeholder="min" />
-              <input className="input" type="number" step="0.5" value={widthFt.max} onChange={(e) => setWidthFt((s) => ({ ...s, max: e.target.value }))} placeholder="max" />
+              <input className="input" type="number" step="0.5" min="0" value={widthFt.min} onChange={(e) => setWidthFt((s) => ({ ...s, min: e.target.value }))} placeholder="min" />
+              <input className="input" type="number" step="0.5" min="0" value={widthFt.max} onChange={(e) => setWidthFt((s) => ({ ...s, max: e.target.value }))} placeholder="max" />
             </div>
           </Field>
 
@@ -164,8 +183,12 @@ export default function PlantForm({ plant, onClose }: Props) {
             <input className="input" value={sunsetText} onChange={(e) => setSunsetText(e.target.value)} />
           </Field>
 
-          <Field label="CA Native (Yes/No)">
-            <input className="input" value={form.caNative ?? ""} onChange={(e) => set("caNative", e.target.value || null)} />
+          <Field label="CA Native">
+            <select className="input" value={form.caNative ?? ""} onChange={(e) => set("caNative", e.target.value || null)}>
+              <option value="">Unknown</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
           </Field>
           <Field label="WUCOLS Code">
             <input className="input" value={form.wucols ?? ""} onChange={(e) => set("wucols", e.target.value || null)} />

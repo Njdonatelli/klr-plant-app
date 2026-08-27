@@ -5,3 +5,4 @@ dist
 *.xlsx
 .~lock.*#
 .vscode/
+tsconfig.tsbuildinfo
