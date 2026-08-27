@@ -50,9 +50,11 @@ src/
     careTips.ts        # Generic care tip generation from light/water bands + category
     importDataset.ts   # Merge logic for bulk xlsx/csv imports
     exportDocx.ts      # Word document generation
+    baselineMigration.ts # Refresh untouched baseline rows when the shipped catalog is corrected
 
   components/
     Dashboard.tsx      # Catalog grid: search, filter, plant cards
+    ErrorBoundary.tsx  # Top-level React error boundary (wraps the app in main.tsx)
     PlantCard.tsx      # Single card in the grid
     PlantDetail.tsx    # Full detail page: care gauges, size chart, zone badge
     FilterBar.tsx      # Category/zone filter controls
@@ -111,7 +113,9 @@ horticultural care data — the UI suppresses the care dashboard for these.
 
 | Action | What it does |
 |---|---|
-| `init()` | Load from IndexedDB on app start; falls back to base JSON |
+| `init()` | Load from IndexedDB on app start; falls back to base JSON. Runs `migrateBaseline()` so untouched baseline rows pick up shipped catalog corrections; sets `initError` on failure |
+| `retryInit()` | Clear `initError` and re-run `init()` |
+| `dismissPersistError()` | Clear the `persistError` banner |
 | `toggleSelected(id)` | Add/remove a plant from the selection set |
 | `upsertPlant(plant)` | Add new or update existing plant; persists to IndexedDB |
 | `deletePlant(id)` | Remove plant; cleans selection; persists |
@@ -121,6 +125,12 @@ horticultural care data — the UI suppresses the care dashboard for these.
 
 **Selection** (`selectedIds: Set<string>`) is persisted to `localStorage`
 separately so it survives reloads without re-reading IndexedDB.
+
+**Error state.** Writes are wrapped so a failed persist (quota exceeded,
+private browsing) surfaces `persistError` instead of throwing — the change
+stays visible but the user is warned it may not survive a reload. A failed
+`init()` sets `initError`, which renders a retry prompt rather than an
+empty catalog.
 
 ---
 
