@@ -6,8 +6,9 @@ function slugCategory(raw: string): string {
     .toString()
     .trim()
     .toLowerCase()
-    .replace(/&/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/&/g, "-")
+    .replace(/[^a-z0-9-]+/g, "-")
+    .replace(/-{2,}/g, "-")
     .replace(/^-+|-+$/g, "");
 }
 
