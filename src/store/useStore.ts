@@ -2,6 +2,7 @@ import { create } from "zustand";
 import type { Plant, PlantDataset } from "../types";
 import { loadStoredDataset, saveStoredDataset, loadSelection, saveSelection } from "../lib/storage";
 import { mergeImportedPlants } from "../lib/importDataset";
+import { migrateBaseline, BASE_DATASET_VERSION } from "../lib/baselineMigration";
 import basePlants from "../data/plants.base.json";
 
 interface ImportResult {
@@ -34,6 +35,7 @@ const BASE_PLANTS = basePlants as unknown as Plant[];
 function makeDataset(plants: Plant[]): PlantDataset {
   return {
     version: 1,
+    baseVersion: BASE_DATASET_VERSION,
     updatedAt: new Date().toISOString(),
     source: "KLR master catalog",
     plants,
@@ -55,10 +57,20 @@ export const useStore = create<StoreState>((set, get) => ({
     const stored = await loadStoredDataset();
     const selection = loadSelection();
     if (stored && stored.plants.length > 0) {
+      // Refresh untouched baseline records when the shipped baseline has
+      // corrections this browser hasn't seen (keeps user edits/deletes intact).
+      const migrated = migrateBaseline(stored, BASE_PLANTS);
+      const plants = migrated ? migrated.plants : stored.plants;
+      if (migrated) {
+        await persist(plants); // also stamps the new baseVersion
+        if (migrated.refreshed > 0) {
+          console.info(`Baseline update: refreshed ${migrated.refreshed} catalog records.`);
+        }
+      }
       set({
-        plants: stored.plants,
+        plants,
         datasetVersion: stored.version,
-        datasetUpdatedAt: stored.updatedAt,
+        datasetUpdatedAt: migrated ? new Date().toISOString() : stored.updatedAt,
         selectedIds: new Set(selection),
         isLoaded: true,
       });

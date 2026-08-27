@@ -76,6 +76,8 @@ export type SDSuitability = "suited" | "marginal" | "unknown";
 
 export interface PlantDataset {
   version: number;
+  /** Which shipped plants.base.json generation this dataset was last synced to. */
+  baseVersion?: number;
   updatedAt: string;
   source: string;
   plants: Plant[];
