@@ -5,9 +5,10 @@ import type { Plant, PlantDataset } from "../types";
  * load, stored datasets stamped with an older baseVersion get their untouched
  * baseline records refreshed in place -- without disturbing anything the user
  * added, edited, or deleted. (v2: zone text/array reconciliation + USDA/Sunset
- * field un-swap, Aug 2026.)
+ * field un-swap, Aug 2026. v3: sunsetZoneText separator typos salvaged from
+ * the archived db-quality branch.)
  */
-export const BASE_DATASET_VERSION = 2;
+export const BASE_DATASET_VERSION = 3;
 
 /** A record the user has added or edited; migration must never replace these. */
 function isTouched(p: Plant): boolean {

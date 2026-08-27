@@ -12572,7 +12572,7 @@
       10,
       11
     ],
-    "sunsetZoneText": "10, 12 - 24: H1, H2",
+    "sunsetZoneText": "10, 12 - 24; H1, H2",
     "sunsetZones": [
       10,
       12,
@@ -158791,7 +158791,7 @@
       10,
       11
     ],
-    "sunsetZoneText": "8, 9 14 - 24",
+    "sunsetZoneText": "8, 9, 14 - 24",
     "sunsetZones": [
       8,
       9,
@@ -164391,7 +164391,7 @@
       10,
       11
     ],
-    "sunsetZoneText": "8, 9 14 - 24",
+    "sunsetZoneText": "8, 9, 14 - 24",
     "sunsetZones": [
       8,
       9,
