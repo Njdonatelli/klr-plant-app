@@ -65,7 +65,7 @@ export default function DatasetManager() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-6">
-      <h1 className="text-2xl font-bold text-gray-900">Manage Dataset</h1>
+      <h1 className="font-display text-2xl font-bold tracking-tight text-klr-900 sm:text-3xl">Manage Dataset</h1>
       <p className="mt-1 text-sm text-gray-500">
         {plants.length.toLocaleString()} items in the catalog
         {datasetUpdatedAt && ` · last updated ${new Date(datasetUpdatedAt).toLocaleString()}`}.
@@ -73,7 +73,7 @@ export default function DatasetManager() {
       </p>
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+        <div className="card p-5">
           <h2 className="mb-2 flex items-center gap-2 text-sm font-semibold text-gray-800">
             <Upload className="h-4 w-4" /> Bulk import / update
           </h2>
@@ -87,13 +87,13 @@ export default function DatasetManager() {
             <button
               onClick={() => fileInput.current?.click()}
               disabled={busy}
-              className="rounded-lg bg-klr-600 px-4 py-2 text-sm font-medium text-white hover:bg-klr-700 disabled:opacity-50"
+              className="btn-primary"
             >
               {busy ? "Importing…" : "Choose file to import"}
             </button>
             <button
               onClick={downloadTemplate}
-              className="flex items-center gap-1.5 rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+              className="btn-secondary"
             >
               <Download className="h-4 w-4" /> Download CSV template
             </button>
@@ -108,7 +108,7 @@ export default function DatasetManager() {
           {status && <p className="mt-3 text-sm text-klr-700">{status}</p>}
         </div>
 
-        <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+        <div className="card p-5">
           <h2 className="mb-2 flex items-center gap-2 text-sm font-semibold text-gray-800">
             <Plus className="h-4 w-4" /> Add a single plant
           </h2>
@@ -144,7 +144,7 @@ export default function DatasetManager() {
         </div>
       </div>
 
-      <div className="mt-6 rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+      <div className="card mt-6 p-5">
         <div className="mb-3 flex items-center justify-between gap-3">
           <h2 className="text-sm font-semibold text-gray-800">
             Manually added / edited items ({customPlants.length})
