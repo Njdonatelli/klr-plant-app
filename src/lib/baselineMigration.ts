@@ -6,9 +6,12 @@ import type { Plant, PlantDataset } from "../types";
  * baseline records refreshed in place -- without disturbing anything the user
  * added, edited, or deleted. (v2: zone text/array reconciliation + USDA/Sunset
  * field un-swap, Aug 2026. v3: sunsetZoneText separator typos salvaged from
- * the archived db-quality branch.)
+ * the archived db-quality branch. v4: reversal of the `z` -> `uz` substitution
+ * and non-ASCII stripping that an ingest pass applied to names, categories and
+ * URLs, plus restoration of the caNative/wucols/supplementalNotes values that
+ * the same pass blanked.)
  */
-export const BASE_DATASET_VERSION = 3;
+export const BASE_DATASET_VERSION = 4;
 
 /** A record the user has added or edited; migration must never replace these. */
 function isTouched(p: Plant): boolean {
