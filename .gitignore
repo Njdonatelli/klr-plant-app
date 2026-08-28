@@ -5,3 +5,7 @@ dist
 *.xlsx
 .~lock.*#
 .vscode/
+tsconfig.tsbuildinfo
+.usda-cache
+usda_crosscheck.json
+__pycache__/

@@ -180,6 +180,7 @@ export async function exportCareDocumentDocx(plants: Plant[], meta: DocMeta) {
   });
 
   const blob = await Packer.toBlob(doc);
-  const fname = `${(meta.clientName || "KLR-Plant-Care-Guide").replace(/[^a-z0-9]+/gi, "-")}.docx`;
+  const sanitized = (meta.clientName || "").replace(/[^a-z0-9]+/gi, "-").replace(/^-+|-+$/g, "");
+  const fname = `${sanitized || "KLR-Plant-Care-Guide"}.docx`;
   saveAs(blob, fname);
 }

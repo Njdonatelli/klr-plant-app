@@ -31,10 +31,12 @@ export function loadSelection(): string[] {
   }
 }
 
-export function saveSelection(ids: string[]): void {
+export function saveSelection(ids: string[]): boolean {
   try {
     localStorage.setItem(SELECTION_KEY, JSON.stringify(ids));
+    return true;
   } catch (e) {
     console.error("Failed to persist selection", e);
+    return false;
   }
 }

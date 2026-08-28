@@ -24,7 +24,8 @@ export function hasAnyZoneData(p: Plant): boolean {
     (p.usdaZoneText && p.usdaZoneText.trim()) ||
       (p.sunsetZoneText && p.sunsetZoneText.trim()) ||
       p.usdaZones.length > 0 ||
-      p.sunsetZones.length > 0
+      p.sunsetZones.length > 0 ||
+      (p.sunsetSpecial && p.sunsetSpecial.length > 0)
   );
 }
 

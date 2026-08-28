@@ -10,13 +10,13 @@ import type { Plant } from "../types";
  * its derived bands.
  */
 
-interface Band {
+export interface Band {
   start: number;
   end: number;
   label: string;
 }
 
-const LIGHT_BANDS: Band[] = [
+export const LIGHT_BANDS: Band[] = [
   { start: 0, end: 2, label: "Shade" },
   { start: 2, end: 4, label: "Partial Shade" },
   { start: 4, end: 5, label: "Filtered Sun" },
@@ -24,7 +24,7 @@ const LIGHT_BANDS: Band[] = [
   { start: 6, end: 8, label: "Full Sun" },
 ];
 
-const WATER_BANDS: Band[] = [
+export const WATER_BANDS: Band[] = [
   { start: 0, end: 0.5, label: "Low" },
   { start: 0.5, end: 1.0, label: "Moderate" },
   { start: 1.0, end: 2.0, label: "Regular" },
@@ -63,6 +63,14 @@ const LIGHT_TIPS: Record<string, string> = {
   "Filtered Sun": "Performs well under high, open canopy (e.g. filtered through palms or open-branched trees) rather than deep shade or unshaded exposure.",
   "Partial Sun": "Tolerates several hours of direct sun; inland plantings may benefit from afternoon shade relief.",
   "Full Sun": "Needs a minimum of 6 hours of direct sun daily. Coastal fog belt sites (immediate Oceanside/Carlsbad coastline) may need to confirm actual sun exposure before relying on inland sun totals.",
+  "Shade – Partial Shade (adaptable)": "Adaptable to low-light conditions from deep shade to morning sun with afternoon shade. Avoid prolonged direct afternoon sun.",
+  "Partial Shade – Filtered Sun (adaptable)": "Performs well in dappled or indirect light; tolerates brief morning sun but benefits from protection during peak afternoon hours.",
+  "Filtered Sun – Partial Sun (adaptable)": "Flexible light requirements — suitable for sites with a mix of filtered canopy and a few hours of direct sun per day.",
+  "Partial Sun – Full Sun (adaptable)": "Broadly sun-tolerant; performs in partial sun and thrives with more exposure. Coastal foggier sites and inland full-sun sites should both work well.",
+  "Shade – Filtered Sun (adaptable)": "Adaptable across a wide shade-to-filtered-sun range. Avoid deep unbroken shade and strong afternoon sun in inland areas.",
+  "Shade – Partial Sun (adaptable)": "Wide light adaptability; best with some indirect or morning light but can handle shadier exposures. Confirm placement before planting in intense inland-sun spots.",
+  "Partial Shade – Full Sun (adaptable)": "Broadly adaptable to a wide range of light conditions; inland sites with intense afternoon sun should confirm tolerance before planting.",
+  "Shade – Full Sun (adaptable)": "Extremely adaptable to available light. Confirm the specific cultivar's sun tolerance before siting in full-sun inland exposures.",
 };
 
 const CATEGORY_TIPS: Record<string, string> = {

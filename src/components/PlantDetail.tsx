@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
 import { ArrowLeft, Check, Plus, Pencil, Trash2, ExternalLink, Leaf, Info } from "lucide-react";
 import { useStore } from "../store/useStore";
 import { CATEGORY_LABELS, NON_PLANT_CATEGORIES } from "../types";
@@ -10,16 +10,29 @@ import PlantForm from "./PlantForm";
 import { generateCareNotes, lightBandLabel, waterBandLabel } from "../lib/careTips";
 import { SD_USDA_ZONES, SD_SUNSET_ZONES, hasAnyZoneData } from "../lib/sanDiego";
 
+function isValidHttpUrl(url: string): boolean {
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === "http:" || parsed.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
 function renderNotes(text: string) {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, i) => {
     const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (m) {
-      return (
-        <a key={i} href={m[2]} target="_blank" rel="noreferrer" className="text-klr-700 underline">
-          {m[1]}
-        </a>
-      );
+      const url = m[2];
+      if (isValidHttpUrl(url)) {
+        return (
+          <a key={i} href={url} target="_blank" rel="noreferrer" className="text-klr-700 underline">
+            {m[1]}
+          </a>
+        );
+      }
+      return <span key={i}>{m[1]}</span>;
     }
     return <span key={i}>{part}</span>;
   });
@@ -116,6 +129,10 @@ function ZoneGauge({
 export default function PlantDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  // Preserve catalog filters/scroll when we came from within the app; fall back
+  // to the catalog on a direct deep link (location.key is "default" on entry).
+  const goBack = () => (location.key === "default" ? navigate("/") : navigate(-1));
   const plant = useStore((s) => s.plants.find((p) => p.id === id));
   const isSelected = useStore((s) => (id ? s.selectedIds.has(id) : false));
   const toggleSelected = useStore((s) => s.toggleSelected);
@@ -144,13 +161,16 @@ export default function PlantDetail() {
 
   return (
     <div className="mx-auto max-w-5xl px-3 sm:px-4 py-4 sm:py-6">
-      <button onClick={() => navigate(-1)} className="mb-4 flex items-center gap-1 text-sm text-gray-500 hover:text-gray-800">
-        <ArrowLeft className="h-4 w-4" /> Back to catalog
+      <button
+        onClick={goBack}
+        className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-sm text-gray-600 shadow-sm transition hover:border-klr-300 hover:text-klr-800"
+      >
+        <ArrowLeft className="h-4 w-4" /> Back
       </button>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-5">
         <div className="md:col-span-2">
-          <div className="aspect-square w-full overflow-hidden rounded-xl border border-gray-200">
+          <div className="aspect-square w-full overflow-hidden rounded-2xl border border-gray-200 shadow-card">
             <ImagePlaceholder category={plant.category} imageUrl={plant.imageUrl} iconClassName="h-16 w-16 opacity-60" />
           </div>
         </div>
@@ -159,7 +179,7 @@ export default function PlantDetail() {
           <div className="mb-1 text-xs font-medium uppercase tracking-wide text-klr-600">
             {CATEGORY_LABELS[plant.category] ?? plant.category}
           </div>
-          <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{plant.commonName}</h1>
+          <h1 className="font-display text-2xl font-bold tracking-tight text-klr-900 sm:text-3xl">{plant.commonName}</h1>
           <p className="italic text-gray-500">{plant.botanicalName || "Botanical name not recorded"}</p>
 
           <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -208,7 +228,7 @@ export default function PlantDetail() {
             >
               <Trash2 className="h-4 w-4" /> Remove
             </button>
-            {plant.sourceUrl && (
+            {plant.sourceUrl && isValidHttpUrl(plant.sourceUrl) && (
               <a
                 href={plant.sourceUrl}
                 target="_blank"
@@ -239,7 +259,7 @@ export default function PlantDetail() {
       ) : (
         <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
           {/* Care & Environment Card */}
-          <div className="rounded-xl border border-gray-200 bg-white p-3 sm:p-5 shadow-sm lg:col-span-2">
+          <div className="card p-4 sm:p-5 lg:col-span-2">
             <h2 className="mb-3 sm:mb-4 text-sm font-semibold uppercase tracking-wide text-gray-500">Care & Mature Size</h2>
             <div className="space-y-6">
               <EnvironmentGraphic
@@ -259,7 +279,7 @@ export default function PlantDetail() {
             </div>
           </div>
 
-          <div className="rounded-xl border border-gray-200 bg-white p-3 sm:p-5 shadow-sm lg:col-span-2">
+          <div className="card p-4 sm:p-5 lg:col-span-2">
             <h2 className="mb-1 text-sm font-semibold uppercase tracking-wide text-gray-500">
               San Diego County Hardiness Fit
             </h2>
@@ -296,7 +316,7 @@ export default function PlantDetail() {
             )}
           </div>
 
-          <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm lg:col-span-2">
+          <div className="card p-4 sm:p-5 lg:col-span-2">
             <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-500">
               Care Notes (draft -- verify before finalizing)
             </h2>
