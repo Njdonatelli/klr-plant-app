@@ -31,7 +31,7 @@ No backend. All data persistence is browser-local (IndexedDB + localStorage).
 
 ```
 src/
-  App.tsx              # Root: Nav, HashRouter, top-level Routes
+  App.tsx              # Root: HashRouter, top nav, mobile bottom tab bar, Routes
   main.tsx             # Entry point
   index.css            # Tailwind base + custom `klr-*` color tokens
   vite-env.d.ts
@@ -51,13 +51,15 @@ src/
     importDataset.ts   # Merge logic for bulk xlsx/csv imports
     exportDocx.ts      # Word document generation
     baselineMigration.ts # Refresh untouched baseline rows when the shipped catalog is corrected
+    exploreStats.ts    # Aggregations for the Explore dashboard (see invariant below)
 
   components/
     Dashboard.tsx      # Catalog grid: search, filter, plant cards
+    Explore.tsx        # Database visualization dashboard at /#/explore
     ErrorBoundary.tsx  # Top-level React error boundary (wraps the app in main.tsx)
     PlantCard.tsx      # Single card in the grid
     PlantDetail.tsx    # Full detail page: care gauges, size chart, zone badge
-    FilterBar.tsx      # Category/zone filter controls
+    FilterBar.tsx      # Filter controls + Filters <-> URL search param round-trip
     SelectionTray.tsx  # Floating tray showing selected count + go-to-document CTA
     CareDocument.tsx   # Document preview & export (selected plants)
     DatasetManager.tsx # Import xlsx/csv, add/edit/delete plants, reset to original
@@ -170,6 +172,28 @@ sourced from the specific plant record. The UI labels this section
 review.
 
 ---
+
+## Explore dashboard & catalog deep links
+
+`/#/explore` charts the catalog (water × light heatmap, mature-height size
+roles, category breakdown, SD suitability) to help match plants to a client's
+site. Two rules keep it trustworthy:
+
+1. **Catalog filters round-trip through URL search params**
+   (`filtersFromParams` / `paramsFromFilters` in `FilterBar.tsx`), so any chart
+   element can deep-link into a pre-filtered catalog (e.g.
+   `/#/?water=Low&light=Full+Sun&plants=1`).
+2. **Chart counts must equal the catalog result count for the link they open.**
+   The membership tests in `lib/exploreStats.ts` deliberately mirror the
+   catalog's filter logic (band-label string matching, max-dimension height
+   boundaries), and every Explore deep link sets `plants=1` because charts
+   exclude `NON_PLANT_CATEGORIES`. If you change filter semantics in
+   `Dashboard.tsx`/`FilterBar.tsx`, update `exploreStats.ts` to match (and vice
+   versa).
+
+CA-native controls (Explore checkbox/tile, catalog checkbox) only render when
+the dataset actually contains `caNative` flags — the shipped baseline has none;
+they appear after an import that includes the column.
 
 ## Dataset import / export
 
