@@ -10,13 +10,13 @@ import type { Plant } from "../types";
  * its derived bands.
  */
 
-interface Band {
+export interface Band {
   start: number;
   end: number;
   label: string;
 }
 
-const LIGHT_BANDS: Band[] = [
+export const LIGHT_BANDS: Band[] = [
   { start: 0, end: 2, label: "Shade" },
   { start: 2, end: 4, label: "Partial Shade" },
   { start: 4, end: 5, label: "Filtered Sun" },
@@ -24,7 +24,7 @@ const LIGHT_BANDS: Band[] = [
   { start: 6, end: 8, label: "Full Sun" },
 ];
 
-const WATER_BANDS: Band[] = [
+export const WATER_BANDS: Band[] = [
   { start: 0, end: 0.5, label: "Low" },
   { start: 0.5, end: 1.0, label: "Moderate" },
   { start: 1.0, end: 2.0, label: "Regular" },
